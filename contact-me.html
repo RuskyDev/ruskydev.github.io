@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="RuskyDev">
+  <meta property="og:description"
+    content="Passionate self-taught programmer experienced in Discord bot development, Roblox game development, web development, and Python, JavaScript">
+  <meta property="og:image" content="https://github.com/RuskyDev/ruskydev.github.io/blob/main/assets/logo.png?raw=true">
+  <meta property="og:url" content="https://ruskydev.com">
+  <title>RuskyDev</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.4/tailwind.min.css">
+  <link rel="icon" type="image/x-icon" href="assets/logo.png">
+  <script src="https://hcaptcha.com/1/api.js" async defer></script>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    a {
+      color: white;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .error {
+      color: red;
+    }
+
+    input,
+    textarea {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="bg-black text-white py-4">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between">
+      <div>
+        <a href="index.html" class="font-bold text-xl">RuskyDev</a>
+      </div>
+      <div>
+        <a href="index.html" class="mr-4">Home</a>
+        <a href="work-experience.html" class="mr-4">Work Experience</a>
+      </div>
+    </nav>
+  </header>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4 text-center">Contact Me</h1>
+    <form action="https://formsubmit.co/contact@ruskydev.com" method="POST"" id="contact-form">
+      <div class="mb-4">
+        <label for="name" class="block">Name:</label>
+        <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded" required>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block">Email:</label>
+        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded" required>
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block">Message:</label>
+        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded" required></textarea>
+      </div>
+      <div class="mb-4">
+        <div class="h-captcha" data-sitekey="d1e7fba3-85f5-4994-b89f-9fcfaf59714d" id="captcha"></div>
+        <span id="captcha-error" class="error"></span>
+      </div>
+      <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+        onclick="validateForm(event)">Send</button>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_next" value="ruskydev.github.io/temp/thanks.html">
+    </form>
+  </div>
+  <script>
+    function validateForm(event) {
+      var captchaResponse = grecaptcha.getResponse();
+      if (captchaResponse.length === 0) {
+        event.preventDefault();
+        document.getElementById('captcha-error').textContent = 'Please complete the captcha.';
+      }
+    }
+  </script>
+</body>
+
+</html>
