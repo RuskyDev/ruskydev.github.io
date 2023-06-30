@@ -1,39 +1,22 @@
+<!-- The loading bar feature is currently under development and will be available soon. I am currently working on resolving the technical aspects of how it will function, as it involves a file. If you would like to offer assistance with this matter, please feel free to contact me at contact@ruskydev.com. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#000000" />
-  <title>Thanks!</title>
+  <title>Loading...</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.4/tailwind.min.css">
   <style>
     body {
       background-color: black;
       color: white;
-    }
-
-    .container {
-      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    .content {
-      text-align: center;
-      width: 100%;
-      
-    }
-
-    h1 {
+      height: 100vh;
       font-size: 3rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-
-    a {
-      color: white;
     }
   </style>
 </head>
@@ -48,13 +31,19 @@
 </script>
 
 <body>
-  <div class="container">
-    <div class="content">
-      <h1 class="text-center mb-4">Thanks!</h1>
-      <p class="text-center mb-4">The form was submitted successfully.</p>
-      <p class="text-center mb-4"><a href="index.html">Go back to homepage</a></p>
-    </div>
-  </div>
+  <h1 id="loading-text"></h1>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script>
+    const loadingText = document.getElementById('loading-text');
+
+    new Typed(loadingText, {
+      strings: ['Loading...'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true
+    });
+  </script>
 </body>
 
 </html>
