@@ -93,7 +93,7 @@
         onclick="validateForm(event)">Send</button>
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="box">
-        <input type="hidden" name="_next" value="https://ruskydev.github.io/temp/thanks.html">
+        <input type="hidden" name="_next" value="https://ruskydev.com/temp/thanks.html">
     </form>
   </div>
   <script>
@@ -105,9 +105,15 @@
       }
     }
   </script>
-    <div class="version">
-        Version 0.0.2
-      </div>
+    <div class="version" onmouseover="showReportBugs()" onclick="showReportBugs()">
+      Version 0.0.2
+    </div>
+    
+    <script>
+      function showReportBugs() {
+        alert("Report any bugs to bugs@ruskydev.com");
+      }
+    </script>
 </body>
 
 </html>

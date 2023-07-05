@@ -68,9 +68,15 @@
     <div class="flex justify-center">
       <a href="contact-me.html" class="bg-white text-black py-2 px-4 rounded-full font-bold">Get in Touch</a>
     </div>
-    <div class="version">
+    <div class="version" onmouseover="showReportBugs()" onclick="showReportBugs()">
       Version 0.0.2
     </div>
+    
+    <script>
+      function showReportBugs() {
+        alert("Report any bugs to bugs@ruskydev.com");
+      }
+    </script>
   </main>
 </body>
 
