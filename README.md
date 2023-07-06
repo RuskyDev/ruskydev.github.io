@@ -1,6 +1,6 @@
 # [RuskyDev.com](https://ruskydev.com)
 
-My personal website.
+## My personal website.
  
 # Patch Notes for 0.0.3
 - Resolved an issue where clicking on the "Go back to homepage" button in thanks.html caused an endless loading loop due to an incorrect URL.
