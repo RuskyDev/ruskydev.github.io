@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notification Page</title>
+  <script>
+    function sendNotification() {
+      if ("Notification" in window) {
+        Notification.requestPermission().then(function(permission) {
+          if (permission === "granted") {
+            var notification = new Notification("YOUR SO GAY BRO 😂");
+          }
+        });
+      }
+    }
+  </script>
+</head>
+<body onload="sendNotification()">
+Ok
+</body>
+</html>
