@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown and Redirect</title>
+    <script data-ad-client="YOUR_AD_CLIENT_ID" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+    <h1>Countdown: <span id="countdown">10</span></h1>
+    <script>
+        function countdown() {
+            var countdownElement = document.getElementById("countdown");
+            var countdownValue = parseInt(countdownElement.textContent);
+
+            if (countdownValue > 0) {
+                countdownValue--;
+                countdownElement.textContent = countdownValue;
+                setTimeout(countdown, 1000);
+            } else {
+                window.location.href = "https://example.com";
+            }
+        }
+        countdown();
+    </script>
+</body>
+</html>
