@@ -1,4 +1,4 @@
 {
     "liveServer.settings.port": 5501,
-    "api-server": "api.ruskydev.com:1119/api/v2/all"
+    "api-server": "api.ruskydev.com/dev/api/v2/all"
 }
