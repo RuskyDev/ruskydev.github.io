@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RuskyDev</title>
+  <link rel="icon" type="image/x-icon" href="assets/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .product-container {
+      border: 2px solid white;
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .product-details {
+      flex: 1;
+    }
+
+    .buy-button {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      padding: 20px 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .buy-button:hover {
+      background-color: #797979;
+    }
+
+    .empty-link {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .empty-link {
+        display: none;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QM4E7S9PDJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-QM4E7S9PDJ');
+</script>
+
+<body>
+  <div class="container mx-auto px-4 py-8">
+    <header class="bg-black text-white py-4">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between">
+        <div>
+          <a href="index.html" class="empty-link font-bold">RuskyDev</a>
+        </div>
+        <div>
+          <a href="index.html" class="mr-4 hover:text-gray-300 transition duration-300">Home</a>
+          <a href="work-experience.html" class="mr-4 hover:text-gray-300 transition duration-300">Work Experience</a>
+          <a href="contact-me.html" class="mr-4 hover:text-gray-300 transition duration-300">Contact me</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mt-8">
+      <h1 class="text-3xl font-bold mb-4">Services</h1>
+
+      <div class="product-container">
+        <div class="product-details">
+          <h2 class="text-xl font-semibold">API Conversion</h2>
+          <p class="text-gray-400">Convert Node.js APIs to Python or Python APIs to Node.js.</p>
+          <p class="text-gray-400">Price: $30 (Simple) / $130 (Advanced)</p>
+        </div>
+        <a href="contact-me.html" class="buy-button bg-green-500 hover:bg-green-700">Buy</a>
+      </div>
+
+      <div class="product-container">
+        <div class="product-details">
+          <h2 class="text-xl font-semibold">API Development</h2>
+          <p class="text-gray-400">Create both Simple and Advanced APIs using Node.js or Python.</p>
+          <p class="text-gray-400">Price: $120 (Simple) / $240 (Advanced)</p>
+        </div>
+        <a href="contact-me.html" class="buy-button bg-green-500 hover:bg-green-700">Buy</a>
+      </div>
+
+      <div class="product-container">
+        <div class="product-details">
+          <h2 class="text-xl font-semibold">Simple Website Development</h2>
+          <p class="text-gray-400">Build websites using HTML, CSS, TailwindCSS, and JS (No Backend).</p>
+          <p class="text-gray-400">Price: $30</p>
+        </div>
+        <a href="" class="buy-button bg-green-500 hover:bg-green-700">unavailable</a>
+      </div>
+
+      <div class="product-container">
+        <div class="product-details">
+          <h2 class="text-xl font-semibold">Discord Bot Development</h2>
+          <p class="text-gray-400">Develop both Simple and Advanced Discord bots using discord.py@latest or
+            discord.js@12.</p>
+          <p class="text-gray-400">Price: $50 (Simple) / $130 (Advanced)</p>
+        </div>
+        <a href="contact-me.html" class="buy-button bg-green-500 hover:bg-green-700">Buy</a>
+      </div>
+
+      <div class="product-container">
+        <div class="product-details">
+          <h2 class="text-xl font-semibold">Discord Server Designing</h2>
+          <p class="text-gray-400">Designing the Best discord servers for you under 2 days! (Management cost per month not included extra $20)</p>
+          <p class="text-gray-400">Price: $10 (Simple) / $30 (Advanced)</p>
+        </div>
+        <a href="contact-me.html" class="buy-button bg-green-500 hover:bg-green-700">Buy</a>
+      </div>
+
+      <div class="product-container">
+        <div class="product-details">
+          <h2 class="text-xl font-semibold">Minecraft Server Development (no network single server only)</h2>
+          <p class="text-gray-400">I will create custom Minecraft SMP or Survival Server (no proxy server contact me for that)</p>
+          <p class="text-gray-400">Price: $20 (Simple) / $80 (Advanced)</p>
+        </div>
+        <a href="contact-me.html" class="buy-button bg-green-500 hover:bg-green-700">Buy</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

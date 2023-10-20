@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="RuskyDev">
-  <meta property="og:image" content="https://github.com/RuskyDev/ruskydev.github.io/blob/main/assets/logo.png?raw=true">
-  <meta property="og:url" content="https://ruskydev.com">
   <meta name="theme-color" content="#000000" />
   <title>RuskyDev</title>
   <link rel="icon" type="image/x-icon" href="assets/logo.png">
@@ -17,13 +15,28 @@
       color: white;
     }
 
-    .version {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      margin: 8px;
-      font-size: 12px;
-      color: gray;
+    a {
+      color: white;
+    }
+
+    .empty-link {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .empty-link {
+        display: none;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -42,12 +55,12 @@
     <header class="bg-black text-white py-4">
       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between">
         <div>
-          <a href="index.html" class="font-bold text-xl">RuskyDev</a>
+          <a href="index.html" class="empty-link font-bold">RuskyDev</a>
         </div>
         <div>
-          <a href="index.html" class="mr-4">Home</a>
-          <a href="work-experience.html" class="mr-4">Work Experience</a>
-          <a href="contact-me.html" class="mr-4">Contact Me</a>
+          <a href="index.html" class="mr-4 hover:text-gray-300 transition duration-300">Home</a>
+          <a href="services.html" class="mr-4 hover:text-gray-300 transition duration-300">Services</a>
+          <a href="contact-me.html" class="mr-4 hover:text-gray-300 transition duration-300">Contact me</a>
         </div>
       </nav>
     </header>
@@ -55,54 +68,101 @@
     <div class="mt-8">
       <h1 class="text-3xl font-bold mb-4">Work Experience</h1>
 
-      <!-- <div class="mb-8">
-        <h2 class="text-xl font-semibold">Owner @ DisManage (Coming Soon)</h2>
-        <p class="text-gray-400">DisManage is a discord server for people who want to setup/manage/get logos and more. We offer services such as Discord Community Management, Discord Server Setup, Logo designs & Banner designs for both gaming/business purposes. We have a dedicated staff and support team to assist you, along with 5+ payment methods for your convenience. Join us now to experience our services and much more.</p>
-         </div> -->
-
       <div class="mb-8">
-        <h2 class="text-xl font-semibold">Admin @ Thunder Rayz (800+ Members / Working Since 7 Oct 2022)</h2>
-        <p class="text-gray-400">Thunder Rayz is a Discord server for YouTuber "Thunder Rayz" who streams multiple games
-          and uploads vlogs. As an admin, I manage both his Minecraft SMP and Discord server, as well as moderate his
-          live stream chat.</p>
+        <h2 class="text-xl font-semibold">Community Manager & Admin @ Thunder Rayz (1080+ Members / Working Since 7 Oct
+          2022)</h2>
+        <p class="text-gray-400">I manage his live stream chat, Discord server, and Minecraft server. I've been working
+          with him for a year.</p>
         <a href="https://discord.gg/4DQrNFgxeH" class="text-blue-400 hover:underline" target="_blank">Join Thunder Rayz
           Discord Server</a>
       </div>
 
       <div class="mb-8">
-        <h2 class="text-xl font-semibold">Co-Owner @ NXT DON (2,000+ Members / Working Since 7 July 2023)</h2>
-        <p class="text-gray-400">At NXT DON Server, I am responsible for managing the Discord server.</p>
-        <a href="https://discord.gg/QnYYkN6vtv" class="text-blue-400 hover:underline" target="_blank">Join NXT DON
-          Discord Server</a>
-      </div>
-
-      <div class="mb-8">
-        <h2 class="text-xl font-semibold">Helper @ MooNodes (2,000+ Members / Working Since 10 July 2023)</h2>
-        <p class="text-gray-400">MooNodes is a free multi-game server hosting service where I help people as a Helper.</p>
+        <h2 class="text-xl font-semibold">Helper @ MooNodes (1400+ Members / Working Since 10 July 2023)</h2>
+        <p class="text-gray-400">MooNodes is a free multi-game server hosting service where I help people as a Helper.
+        </p>
         <a href="https://discord.gg/fUZUhzvPwp" class="text-blue-400 hover:underline" target="_blank">Join MooNodes
           Discord Server</a>
       </div>
 
-      <h1 class="text-3xl font-bold mb-4">My own projects</h1>
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold">Co Founder @ J4J's Coin Shop (300+ Members / Working Since 21 September 2023)
+        </h2>
+        <p class="text-gray-400">J4J's Coin Shop aim to offer more coins at lower prices to boost sales.</p>
+        <a href="https://discord.gg/fUZUhzvPwp" class="text-blue-400 hover:underline" target="_blank">Join J4J's Coin
+          Shop
+          Discord Server</a>
+      </div>
 
       <div class="mb-8">
-        <h2 class="text-xl font-semibold">Owner @ Rusky's Server (150+ Members)</h2>
-        <p class="text-gray-400">This is my personal server dedicated to my upcoming projects, my YouTube channel, and my Minecraft server. You can join it to chat with me; I'm almost always online and actively update the server as well!</p>
+        <h2 class="text-xl font-semibold">Web Developer @ RedBird (50+ Members / Working Since 1 September 2023)</h2>
+        <p class="text-gray-400">At RedBird, I manage the official support server and handle the development of their
+          website and Discord bot. It's an exciting role that involves various responsibilities to ensure the smooth
+          functioning of RedBird's services.</p>
+        <a href="https://discord.gg/RDDkH44aHa" class="text-blue-400 hover:underline" target="_blank">Join RedBird
+          Discord Server</a>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold">Developer @ SNG Network (100+ Members / Working Since 7 October 2023)</h2>
+        <p class="text-gray-400">I'm the main network developer working on all networks.</p>
+        <a href="https://discord.gg/hbGuVVuj8x" class="text-blue-400 hover:underline" target="_blank">Join SNG Network
+          Discord Server</a>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold">Founder @ Invite Rewards* (1700+ Members / Working Since 28 September 2023)
+        </h2>
+        <p class="text-gray-400">Invite Rewards aims to provide legitimate, free, and 100% working rewards for invites.
+        </p>
+        <a href="https://discord.gg/invitewards" class="text-blue-400 hover:underline" target="_blank">Join Invite Rewards
+          Discord Server</a>
+      </div>
+
+      <h1 class="text-3xl font-bold mb-4">Past Experience</h1>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold">Moderator @ Zy's Crib (200+ Members / Resigned)</h2>
+        <p class="text-gray-400">I was a moderator for a few months, but I resigned because I was already managing too
+          many servers.</p>
+        <a href="https://discord.gg/W8M3TM28fa" class="text-blue-400 hover:underline" target="_blank">Join Zy's Crib
+          Discord Server</a>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold">Co Owner @ NXTDON* (???? Members / Resigned)</h2>
+        <p class="text-gray-400">It was really nice being a co-owner, but due to some issues, I resigned. I held the
+          position for almost a year.</p>
+        <a href="" class="text-blue-400 hover:underline">Unavailable</a>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold">Moderator @ Unbound Sky (9,600+ Members / Resigned)</h2>
+        <p class="text-gray-400">
+          I was a moderator for a few months but resigned because I didn't have enough time to continue moderating.</p>
+        <a href="https://discord.gg/fET6mxfGVP" class="text-blue-400 hover:underline">Join Unbound Sky Discord
+          Server</a>
+      </div>
+
+      <h1 class="text-3xl font-bold mb-4">My own servers/projects</h1>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold">Owner @ Rusky's Server (220+ Members)</h2>
+        <p class="text-gray-400">This is my personal server dedicated to my upcoming projects, my YouTube channel, and
+          my Minecraft server. You can join it to chat with me; I'm almost always online and actively update the server
+          as well!</p>
         <a href="https://discord.gg/qw2ZtturP8" class="text-blue-400 hover:underline" target="_blank">Join Server</a>
       </div>
 
       <div class="mb-8">
-        <h2 class="text-xl font-semibold">Owner @ PureSurvival</h2>
-        <p class="text-gray-400">A simple, non-toxic Minecraft survival server with no plugins, except for essential security ones. Vanilla griefing is allowed, and more. Join now and have some fun!</p>
-        <a href="https://discord.gg/qw2ZtturP8" class="text-blue-400 hover:underline" target="_blank">Join our server to get IP</a>
+        <h2 class="text-xl font-semibold">Founder @ Stack Generator (6.7k+ accounts generated)</h2>
+        <p class="text-gray-400">Stack Generator is a tool that generates multiple games, game passes, etc. with a valid
+          checker for $0.99 per 100 accounts. (backend is coded in php)</p>
+        <a href="https://stack.ruskydev.com" class="text-blue-400 hover:underline" target="_blank">Website</a>
       </div>
-
-      <!-- <div class="mb-8">
-        <h2 class="text-xl font-semibold">Developer @ RedBird (31 Members)</h2>
-        <p class="text-gray-400">At RedBird, I manage the official support server and handle the development of their website and Discord bot. It's an exciting role that involves various responsibilities to ensure the smooth functioning of RedBird's services.</p>
-        <a href="https://discord.gg/5GR8qaZV" class="text-blue-400 hover:underline" target="_blank">Join RedBird Discord Server</a>
-      </div> -->
     </div>
+    
+    <p class="text-3xl font-bold mb-4">Note: Everything here Updates every week</p>
   </div>
 </body>
 

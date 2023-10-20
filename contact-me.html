@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="RuskyDev">
-  <meta property="og:image" content="https://github.com/RuskyDev/ruskydev.github.io/blob/main/assets/logo.png?raw=true">
-  <meta property="og:url" content="https://ruskydev.com">
   <meta name="theme-color" content="#000000" />
   <title>RuskyDev</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.4/tailwind.min.css">
@@ -35,13 +33,24 @@
     textarea {
       color: black;
     }
-    .version {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      margin: 8px;
-      font-size: 12px;
-      color: gray;
+    .empty-link {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .empty-link {
+        display: none;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -59,12 +68,12 @@
   <header class="bg-black text-white py-4">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between">
       <div>
-        <a href="index.html" class="font-bold text-xl">RuskyDev</a>
+        <a href="index.html" class="empty-link font-bold">RuskyDev</a>
       </div>
       <div>
-        <a href="index.html" class="mr-4">Home</a>
-        <a href="work-experience.html" class="mr-4">Work Experience</a>
-        <a href="contact-me.html" class="mr-4">Contact Me</a>
+        <a href="index.html" class="mr-4 hover:text-gray-300 transition duration-300">Home</a>
+        <a href="work-experience.html" class="mr-4 hover:text-gray-300 transition duration-300">Work Experience</a>
+        <a href="services.html" class="mr-4 hover:text-gray-300 transition duration-300">Services</a>
       </div>
     </nav>
   </header>
