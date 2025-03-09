@@ -1,8 +1,10 @@
 {
+  "_comments": "The versioning system operates based on the commit count of a GitHub repository. The version number is always one commit behind the total commit count. For example, if a repository has two commits, the version number will be 1. However, if the GitHub commit count is 1, the version number will also be 1, not zero. This system follows a sequential pattern: 1, 2, 3, and so on.",
+
   "softwares": {
     "disboard-auto-bump": "1"
   },
   "websites": {
-    "rusky.is-a.dev": "149"
+    "rusky.is-a.dev": "150"
   }
 }
